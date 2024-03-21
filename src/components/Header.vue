@@ -38,6 +38,11 @@
     width: 100%;
     position: fixed;
     z-index: 999;
+      div{
+        a{
+          margin: 0 8px;
+        }
+      }
       #logo{
         width: 100px;
         height:24px;
