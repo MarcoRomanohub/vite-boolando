@@ -5,9 +5,11 @@
 </script>
 
 <template>
-  <div>
-    Main
-  </div>
+  <main>
+    <div class="container d-flex">
+      
+    </div>
+  </main>
 </template>
 
 <style lang="scss">
