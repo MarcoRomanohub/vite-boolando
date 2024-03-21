@@ -30,10 +30,11 @@
 </template>
 
 <style lang="scss">
+@use '../assets/scss/partials/variables' as *;
 
 footer{
   height: 70px;
-  background-color: rgb(26, 26, 26);
+  background-color: $bg-footer;
   color: white;
   .bottom-bar{
     height: 100%;

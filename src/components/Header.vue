@@ -28,7 +28,7 @@
 header{
   height: 50px;
   width: 100%;
-  background-color: rgb(239, 104, 55);
+  background-color: $bg-header;
   position: fixed;
   z-index: 1;
   .topbar{
