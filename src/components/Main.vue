@@ -14,7 +14,7 @@
 
 main {
   padding-top: 100px;
-  height: 600px;
+  height: calc(100vh - 70px);
   background-color: gray;
 }
 
