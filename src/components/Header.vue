@@ -1,6 +1,10 @@
 <script>
   export default {
-    
+    data(){
+      return{
+        categories:['Donna', 'Uomo', 'Bambino'],
+      }
+    }
   }
 </script>
 
@@ -8,9 +12,7 @@
   <header>
     <div class="topbar container d-flex">
       <div class="categorie d-flex">
-        <a href="#" class="top-link">Donna</a>
-        <a href="#" class="top-link">Uomo</a>
-        <a href="#" class="top-link">Bambino</a>
+        <a href="#" class="top-link" v-for="(category, index) in categories" key="index"> {{ category }} </a>
       </div>
       <div class="logo"><img src="/img/boolean-logo.png" alt=""></div>
       <div class="area-personale">
