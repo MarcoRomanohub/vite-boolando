@@ -5,7 +5,7 @@ export default {
     productBackImage: String,
     productName: String,
     productBrand: String,
-    productPrice: String
+    productPrice: Number
   }
 }
 </script>
@@ -15,10 +15,10 @@ export default {
   <!-- PRODOTTO -->
   <div class="box-product">
     <div class="first-img">
-      <img :src="productFrontImage" :alt="productName">
+      <img :src="productFrontImage" , :alt="productName">
     </div>
     <div class="hover-img">
-      <img :src="productBackImage" :alt="productName">
+      <img :src="productBackImage" , :alt="productName">
     </div>
     <div class="marchio">{{ productBrand }}</div>
     <h4>{{ productName }}</h4>

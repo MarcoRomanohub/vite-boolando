@@ -21,7 +21,7 @@ export default {
   <main>
     <div class="container d-flex">
 
-      <ProductCard v-for="product in products" :key="product.id" :productFrontImage="product.frontImage"
+      <ProductCard v-for="(product) in products.products" :key="product.id" :productFrontImage="product.frontImage"
         :productBackImage="product.backImage" :productName="product.name" :productBrand="product.brand"
         :productPrice="product.price" />
 
