@@ -2,17 +2,17 @@
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
-  export default {
-    components:{
+export default {
+  components: {
 
-      Header,
-      Main,
-      Footer
-    
-    }
-      
+    Header,
+    Main,
+    Footer
+
   }
-  
+
+}
+
 </script>
 
 <template>
@@ -22,7 +22,5 @@ import Footer from './components/Footer.vue';
 </template>
 
 <style lang="scss">
-
 @use './assets/scss/main.scss';
-
 </style>
