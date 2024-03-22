@@ -1,12 +1,18 @@
+
 <script>
+import ProductCard from './partials/ProductCard.vue';
   export default {
-    
+    components:{
+      ProductCard
+    }
   }
 </script>
 
 <template>
-  <main class="d-flex justify-content-center align-items-center ">
-    <div>main</div>
+  <main>
+
+   <ProductCard />
+    
   </main>
 </template>
 
@@ -14,8 +20,7 @@
 
 main {
   padding-top: 100px;
-  height: calc(100vh - 70px);
-  background-color: gray;
+ 
 }
 
 </style>
