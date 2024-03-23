@@ -1,11 +1,11 @@
 <script>
 export default {
   props: {
-    productFrontImage: String,
-    productBackImage: String,
-    productName: String,
-    productBrand: String,
-    productPrice: Number
+    FrontImage: String,
+    BackImage: String,
+    Name: String,
+    Brand: String,
+    FullPrice: Number
   }
 }
 </script>
@@ -15,14 +15,14 @@ export default {
   <!-- PRODOTTO -->
   <div class="box-product">
     <div class="first-img">
-      <img :src="productFrontImage" , :alt="productName">
+      <img :src="FrontImage" , :alt="Name">
     </div>
     <div class="hover-img">
-      <img :src="productBackImage" , :alt="productName">
+      <img :src="BackImage" , :alt="Name">
     </div>
-    <div class="marchio">{{ productBrand }}</div>
-    <h4>{{ productName }}</h4>
-    <div class="price">14,99 € <span> {{ productPrice }} </span></div>
+    <div class="marchio">{{ Brand }}</div>
+    <h4>{{ Name }}</h4>
+    <div class="price">14,99 € <span> {{ FullPrice }} </span></div>
     <div class="discount">-50%</div>
     <div class="sostenibile">Sostenibilità</div>
     <div class="heart">&hearts;</div>
