@@ -1,9 +1,7 @@
 <script>
 import ProductCard from './partials/ProductCard.vue';
-import products from '../components/data/product.json';
-
+import products from './data/product.json';
 export default {
-
   data() {
     return {
       products
@@ -12,20 +10,22 @@ export default {
   components: {
     ProductCard
   },
-
+  mounted() {
+    console.log(this.products.products);
+  }
 }
-
 </script>
 
 <template>
   <main>
     <div class="container d-flex">
 
-      <ProductCard v-for="(product) in products.products" :key="product.id"
-        :FrontImage="`src/assets/img/${product.frontImage}`" :BackImage="`src/assets/img/${product.BackImage}`"
-        :Name="product.name" :Brand="product.brand" :FullPrice="product.price" />
+      <ProductCard v-for="(product) in products.products" :key="product.id" :FrontImage="`/img/${product.frontImage}`"
+        :BackImage="`/img/${product.backImage}`" :Name="product.name" :Brand="product.brand"
+        :FullPrice="product.price" />
 
     </div>
+
   </main>
 </template>
 

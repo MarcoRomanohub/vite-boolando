@@ -12,17 +12,18 @@ export default {
 
 <template>
 
-  <!-- PRODOTTO -->
+
+  <!-- PRODUCT -->
   <div class="box-product">
     <div class="first-img">
-      <img :src="FrontImage" , :alt="Name">
+      <img :src="FrontImage" alt="">
     </div>
     <div class="hover-img">
-      <img :src="BackImage" , :alt="Name">
+      <img :src="BackImage" alt="">
     </div>
-    <div class="marchio">{{ Brand }}</div>
+    <div class="marchio"> {{ Brand }} </div>
     <h4>{{ Name }}</h4>
-    <div class="price">14,99 € <span> {{ FullPrice }} </span></div>
+    <div class="price">14,99 € <span>{{ FullPrice }}</span></div>
     <div class="discount">-50%</div>
     <div class="sostenibile">Sostenibilità</div>
     <div class="heart">&hearts;</div>
@@ -32,32 +33,30 @@ export default {
 </template>
 
 <style lang="scss">
+.box-product .left0 {
+  position: relative;
+  left: 0;
+}
+
 .box-product {
   margin: 0 10px;
   width: 470px;
   /* height: 670px; */
   position: relative;
-
-  .left0 {
-    position: relative;
-    left: 0;
-  }
-
-  &:hover {
-    .hover-img {
-      display: block;
-    }
-
-    .heart {
-      color: red;
-    }
-  }
 }
 
 .hover-img {
   position: absolute;
   top: 0;
   display: none;
+}
+
+.box-product:hover .hover-img {
+  display: block;
+}
+
+.box-product:hover .heart {
+  color: red;
 }
 
 .discount {
@@ -95,11 +94,11 @@ export default {
 .price {
   color: red;
   font-size: .8rem;
+}
 
-  span {
-    text-decoration: line-through;
-    color: black;
-  }
+.price span {
+  text-decoration: line-through;
+  color: black;
 }
 
 .heart {
